@@ -100,7 +100,7 @@ header>button,
     cursor: pointer;
 }
 
-/* Amanda*/
+/* NAVEGAÇÃO*/
 .navbar {
     display: flex;
 }
@@ -119,36 +119,6 @@ nav > a{
     background-color: #FFE4E1;
     }
 
-/*NAVEGAÇÃO*/
-/* nav {
-    display: grid;
-    padding: 10px;
-    /* width: 300px; */
-    /* position: absolute;
-    left: 40px; */
-    /* bottom: -50px; */
-    /* font-weight: bold;
-    padding-top: 50px;
-    font-size: 18px;
-
-
-}*/
-
-/* .botao-nav {
-    display: grid;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    list-style-type: none;
-
-}
-
-.botao-nav a {
-    color: #000;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-
-} */
-/*MAIN*/
 
 .navbar{
     list-style: none;
@@ -194,16 +164,12 @@ main {
 .banner {
     width: 1349px;
     height: 300px;
-    /* padding: 2px;*/
     display: grid;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     align-items: center;
-    /*grid-template-columns: repeat(2, 1fr);*/
     margin-top: -50px;
-
-
 }
 
 section {
@@ -219,10 +185,12 @@ section {
     align-items: center;
 }
 
-/* .home-text img {
-    width: 50%;
-   
-} */
+
+.home-img img {
+    max-width: 100%;
+    width: 500px;
+    height: 400px;
+}
 
 .home-text h1 {
     font-size: 3rem;
@@ -265,8 +233,9 @@ section {
     padding: 70px 0;
     text-align: center;
     width: 66%;
-    margin: 70px auto;
+    margin: 10px auto;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 .cta h2 {
@@ -281,11 +250,11 @@ section {
 }
 
 .footer {
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 .col {
-    width: 25%;
+    width: 20%;
 }
 
 .col h4 {
@@ -299,8 +268,8 @@ section {
     content: "";
     position: absolute;
     height: 2px;
-    width: 50px;
-    left: 0;
+    width: 60px;
+   
     bottom: -8px;
     background:  #51260e;
 }
@@ -315,7 +284,7 @@ section {
     color: #000;
     font-size: 1.1rem;
     display: block;
-    text-transform: capitalize;
+    
     transition: .4s;
     text-decoration: none;
 }
@@ -351,50 +320,21 @@ section {
     color: #000;
     background: #fff;
 }
+
 /*MEDIA QUERY*/
-@media (max-width: 1560px) {
+@media screen and (max-width:1240px){
+  /* */ .logo{
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
     header {
         padding: 15px 40px;
-    }
-
-    home h2 {
-        font-size: 3.5rem;
-        font-size: 2rem;
     }
 }
 
 @media(max-width: 1140px) {
-    section {
-        padding: 80px 8%;
-        /*80px*/
-    }
-
-    #menu-icon {
-        display: initial;
-        color: #000;
-    }
-
-    header .navbar {
-        position: absolute;
-        top: -400px;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background: #f0f5d8;
-        transition: .3s;
-    }
-
-    header .navbar.active {
-        top: 70px;
-    }
-
-    .navbar a {
-        padding: 1.5rem;
-        display: block;
-    }
-
     .col {
         width: 50%;
         margin-bottom: 10px;
@@ -410,16 +350,6 @@ section {
         grid-template-columns: 1fr;
         text-align: center;
     }
-
-    .sobre {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .sobre-img {
-        order: 2;
-    }
-
     section {
         padding: 100px 7%;
     }
