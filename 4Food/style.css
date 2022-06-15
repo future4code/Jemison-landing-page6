@@ -111,11 +111,19 @@
     justify-content: center;
     border-radius: 1rem;
   }
-  .search p {
+.search p {
     color: #51260e;
     font-size: 4.5rem;
     text-align: center;
   }
+
+  .title-delivery{
+    color: #51260e;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+  }
+
   .search-box {
     display: flex;
     justify-content: center;
@@ -126,7 +134,7 @@
   }
 
   .search-box input {
-    border-radius: 1rem;
+    border-radius: 2rem;
     border: 0.10rem solid #51260e;
     width: 400px;
     padding: 1rem 1.5rem;
@@ -140,6 +148,7 @@
 
   #about,
   #menu,
+  #delivery,
   #contact {
     display: flex;
     justify-content: center;
