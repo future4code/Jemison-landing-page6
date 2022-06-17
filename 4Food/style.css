@@ -117,13 +117,6 @@
     text-align: center;
   }
 
-  .title-delivery{
-    color: #51260e;
-    font-size: 4rem;
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-  }
-
   .search-box {
     display: flex;
     justify-content: center;
@@ -245,7 +238,34 @@
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
+
+  #delivery {
+    display: flex;
+    align-items: center;
+    }
+
+  .img-delivery {
+    padding: 2rem;
+  }
     
+  .text-delivery {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+
+  .title-delivery {
+    color: #51260e;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+  }
+
+  .button-delivery{
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
     #contact {
       display: flex;
       flex-direction: column;
